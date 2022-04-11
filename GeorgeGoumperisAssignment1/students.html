@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Form</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="container">
+        <header class="jumbotron text-center">
+            <h1>Coding Bootcamp</h1>
+            <p>PeopleCert</p>
+        </header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <a href="home.html" class="navbar-brand">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" id="collapsibleNavbar">
+               
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Courses
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="courses.html">Java Part-time</a></li>
+                      <li><a class="dropdown-item" href="coursesC.html">C# Part-time</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Trainers
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="trainers.html">Trainers</a></li>
+                      <li><a class="dropdown-item" href="trainers_per_course.html">Trainers per Course</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Students
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="students.html">Students</a></li>
+                      <li><a class="dropdown-item" href="students_per_course.html">Students per Course Java</a></li>
+                      <li><a class="dropdown-item" href="studentspercousec.html">Students per Course C#</a></li>                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Assignments
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="assignments.html">Assignments</a></li>
+                      <li><a class="dropdown-item" href="assignments_per_course.html">Assignments per Course</a></li>
+                      <li><a class="dropdown-item" href="assignments_per_student_per_course.html">Assignments per Student per Course</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav> <!-- End of Navigation Bar -->
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Bootcamp Students</h2>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-5 offset-lg-1 my-5">
+                <p class="bg-dark text-white"><strong>Please fill the form below:</strong></p>
+                <form action="" autocomplete="off">
+                    <div class="form-group">
+                        <label for="firstname">First Name:</label>
+                        <input type="text" class="form-control" id="firstname" name="firstname" required>
+                        <div class="alert alert-danger" id="firstname-error">Success of Failure</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" class="form-control" id="lastname" name="lastname" required>
+                        <div class="alert alert-danger" id="lastname-error">Success of Failure</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="date-of-birth">Date of Birth:</label>
+                        <input type="date" class="form-control" id="date-of-birth" name="date-of-birth">
+                    </div>
+                    <div class="form-group">
+                        <label for="tuition-fees">Tuition Fees:</label>
+                        <input type="number" class="form-control" id="tuition-fees" name="tuition-fees" min="1" 
+                            required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </form>
+            </div>
+
+            <div class="col-lg-5 offset-lg-1 my-5">  
+                <p class="bg-dark text-white"><strong>Please check the form below:</strong></p>
+                <form action="">
+                    <div class="form-group">
+                        <label for="firstname">First Name:</label>
+                        <input type="text" class="form-control" id="firstname" name="firstname" 
+                        value="George" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" class="form-control" id="lastname" name="lastname" 
+                        value="Goumperis" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date-of-birth">Date of Birth:</label>
+                        <input type="date" class="form-control" id="date-of-birth" name="date-of-birth" value="1992-09-22">
+                    </div>
+                    <div class="form-group">
+                        <label for="tuition fee">Tuition Fees:</label>
+                        <input type="text" class="form-control" id="tuition-fees" name="tuition-fees" min="1"
+                        value="2500" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Edit</button>
+                </form>         
+            </div>
+        </div>
+    </div> <!-- End of Container -->
+    <footer class="jumbotron text-center">
+        <p>Copyright (c) 2021 iMant Programming</p>
+    </footer>
+
+    <script>
+        $(function() {
+            $('#firstname-error').hide();
+        
+            var error_fname= "";
+            $('#firstname').focusout(function () {
+                checkFirstName();
+            });
+
+            function checkFirstName() {
+                var pattern = /^[a-zA-Z]*$/;
+                var firstname = $('#firstname').val();
+                console.log(firstname);
+                if (pattern.test(firstname) && firstname !== '') {
+                    $('#firstname-error').hide();
+                    $('#firstname').css({"border-bottom" : "2px solid #34f458"});
+                    $('input[type-text]').val(function() {
+                        return this.value.toUpperCase();
+                    })
+
+                }
+                else {
+                    $('#firstname-error').show().html("should contain only characters!");
+                    error_fname = 'true';
+                }
+            }
+        });
+
+        $(function() {
+            $('#lastname-error').hide();
+        
+            var error_lname= "";
+            $('#lastname').focusout(function () {
+                checkLastName();
+            });
+
+            function checkLastName() {
+                var pattern = /^[a-zA-Z]*$/;
+                var lastname = $('#lastname').val();
+                console.log(lastname);
+                if (pattern.test(lastname) && lastname !== '') {
+                    $('#lastname-error').hide();
+                    $('#lastname').css({"border-bottom" : "2px solid #34f458"});
+                    $('input[type-text]').val(function() {
+                        return this.value.toUpperCase();
+                    })
+
+                }
+                else {
+                    $('#lastname-error').show().html("should contain only characters!");
+                    error_lname = 'true';
+                }
+            }
+        });
+
+       
+        
+    </script>
+    
+</body>
+</html>
